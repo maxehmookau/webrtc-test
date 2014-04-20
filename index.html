@@ -11,7 +11,8 @@
     var webrtc = new SimpleWebRTC({
       localVideoEl: 'localVideo',
       remoteVideosEl: 'remotesVideos',
-      autoRequestMedia: true
+      autoRequestMedia: true,
+      url: 'http://localhost:8888'
     });
     webrtc.on('readyToCall', function () {
       webrtc.joinRoom('testRoom');
