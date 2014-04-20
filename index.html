@@ -11,8 +11,8 @@
     var webrtc = new SimpleWebRTC({
       localVideoEl: 'localVideo',
       remoteVideosEl: 'remotesVideos',
-      autoRequestMedia: true,
-      url: 'http://maxwoolf-turn-server.herokuapp.com:8888'
+      autoRequestMedia: true
+      // url: 'http://maxwoolf-turn-server.herokuapp.com:8888'
     });
     webrtc.on('readyToCall', function () {
       webrtc.joinRoom('testRoom');
